@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>S3 POST Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        #Select1 {
+            width: 200px;
+            height: 185px;
+        }
+    </style>
+</head>
+<body style="background-image:url(bear.jpg);background-attachment:fixed;background-size:cover">
+    <h1 style="font-family:'Comic Sans MS'; text-align:center; color:grey; font-size:80px; margin-top: 15px;"> Kick out useless logo </h1>
+    <h2 style="margin-left:180px;margin-top:100px; font-family:'Comic Sans MS'; color:black"> Play your video</h2>
+    <div class=" body" style="margin-left:50px">
+        <div>
+            <iframe src="https://www.youtube.com/embed/ghV21DlDOug" style="border-style: none; border-color: inherit; border-width: 0px; height: 355px; width: 465px; margin-right: 0px;"></iframe>
+        </div>
+        <form style="margin-top:-350px; margin-left:840px; height: 230px; width: 529px;" action="https://trackingobject.s3.amazonaws.com" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="key" value="user/user1/${filename}">
+            <input type="hidden" name="AWSAccessKeyId" value="AKIAIELFIGWWAZCUHBFQ">
+            <input type="hidden" name="acl" value="public-read">
+            <input type="hidden" name="policy" value='CiAgICB7CiAgICAiZXhwaXJhdGlvbiI6ICIyMDIwLTAxLTAxVDAwOjAwOjAwWiIsCiAgICAiY29uZGl0aW9ucyI6IFsKICAgIHsiYnVja2V0IjogInRyYWNraW5nb2JqZWN0In0sCiAgICBbInN0YXJ0cy13aXRoIiwgIiRrZXkiLCAidXNlci91c2VyMSJdLAogICAgeyJhY2wiOiAicHVibGljLXJlYWQifSwKICAgCiAgICBbInN0YXJ0cy13aXRoIiwgIiRDb250ZW50LVR5cGUiLCAid212L3BuZy9pbWcvbXA0Il0sCiAgICBbImNvbnRlbnQtbGVuZ3RoLXJhbmdlIiwgMCwgMTA0ODU3NjAwMF0KICAgIF0KICAgIH0KICAgIA=='>
+            <input type="hidden" name="signature" value='q1kGLbB0kL086+daCiJAhVDp864='>
+            <input type="hidden" name="Content-Type" value="wmv/png/img/mp4">
+            <!— Include any additional input fields here —>
+            <label1 style="margin-top:80px; font-family:'Juice ITC';font-size:24px;color:black;font-weight:900">
+                Choose your video here:</labe1>&nbsp;&nbsp;
+                <input name="file" type="file" style="font-family:'Comic Sans MS'; width: 210px; height: 36px;">
+                <p2>
+                    &nbsp;&nbsp;&nbsp;<br />
+                    <br />
+                    <label2 style="margin-top:80px; font-family:'Juice ITC';font-size:24px;color:black;font-weight:900">
+                        Kick out logo:</labe2>
+                        <input id="Radio1" type="radio" />Pepsi&nbsp;
+                        <input id="Radio2" type="radio" />Sprint
+                        <input id="Radio3" type="radio" />GMC
+                        <input id="Radio4" type="radio" />Apple&nbsp;
+                        <input id="upload1" type="submit" value="Upload" style="font-family:'Comic Sans MS'; height: 35px; width: 84px"><br />
+                        &nbsp;<br />
+                        <label3 style="margin-top:80px; margin-left:50px; font-family:'Juice ITC';font-size:24px;color:black;font-weight:900">
+                            Download your video here:</labe3>&nbsp; <br />
+                            <select id="Select1" name="D1" style="margin-left:50px"></select>
+                            <input id="download1" type="button" value="Download" style="font-family:'Comic Sans MS'; width: 84px; height: 35px;">
+                </p2>
+                &nbsp;<br />
+        </form>
+    </div>
+</body>
+</html>
